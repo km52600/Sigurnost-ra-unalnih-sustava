@@ -1,0 +1,7 @@
+1.Pozicioniraj se u direktorij -> /mnt/c/srs-labosi/labos1
+2.Unesi naredbu za pokretanje programa -> ./zaporke
+3.Na prvom pokretanju izaberi master zaporku
+4.Na svakom iducem pokretanju prvo unesi master lozinku
+5.Nakon toga izaberi jedan od dva zahtjeva(n ili s)
+6.Ako si izabrao n onda unesi novu zaporku
+7.Ako si izabrao s unesi adresu zaporke koju želiš pogledati

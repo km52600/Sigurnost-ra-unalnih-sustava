@@ -1,0 +1,10 @@
+Sustav je baziran na tome da se njegovim prvim pokretanjem traži postavljanje 
+master lozinke u vec postojeci tekstualni dokument. Koja se nakon toga kriptira 
+sistemom jednokratne biljeznice i kriptirana zapisuje u taj dokument.
+Na drugom i svakom iducem pokretanju se trazi unosenje vec postojece master 
+lozine koja se uspoređuje sa unesenom master lozinkom. Ukoliko je unesena master 
+lozinka ispravna onda se od klijenta trazi da izabere jedan od dva zahtjeva.
+Prvi zahtjev je unosenje nove lozinke u bazu. Koja se nakon toga zbraja s master 
+lozinkom i tako kriptirana zapisuje na prvu slobodnu adresu. Drugi zahtjev je 
+pregled neke vec unesene lozinke. Klijent prvo mora unijeti jednu od postojecih 
+adresa,a nakon toga se lozinka s te adrese dekriptira i ispisuje na ekranu.

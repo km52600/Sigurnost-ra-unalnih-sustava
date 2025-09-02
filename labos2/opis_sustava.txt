@@ -1,0 +1,15 @@
+Sigurna pohrana zaporki je postignuta izbjegavanjem spremanja u obliku čistog teksta.Sprema se kriptografski sažetak te zaporke uz salt koji je 
+specifičan za taj sažetak.Izračun kriptografskog sažetka postignut je korištenjem PBKDF2 funkcije za derivaciju ključa.
+
+Struktura podataka koje spremamo u datotetu database.txt izgleda:
+    prvi redak->serijalizirana mapa-ključ:sažetak korisničkog imena,vrijednost:set već korištenih zaporki za to korisničko ime kao stringovi formata "sažetakzaporkeSalt"
+    ostali reci->"sažetakkorisničkogimenaSažetakzaporkeSaltZastavicazaobaveznupromjenu"
+
+Dok unosimo zaporke u terminal one se ne ispisuju na terminal što smanjuje prijetnju "shoulder surfinga"(napadač u neposrednoj blizini korisnika
+ne vidi što korisnik unosi unosi).
+Zaporka mora biti duga barem 8 znakova te sadržavati minimalno jedan broj/veliko slovo/specijalan znak.
+Sve korištene zaporke spremamo te osiguravamo daljnje nekorištenje kompromitiranih/već korištenih zaporki,time smo sigurni ako napadač zna neku staru zaporku.
+
+
+
+

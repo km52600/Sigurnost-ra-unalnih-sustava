@@ -1,0 +1,11 @@
+1.Pozicioniraj se u direktorij labosa ->cd /mnt/c/srs-labosi/labos2
+2.Pozicioniraj se u direktorij koda -> cd src/main/java/hr/fer/srs
+3.Stvori class datoteke -> javac -d ../../../../../../bin *.java commands/*.java elements/*.java exceptions/*.java
+4.Vrati se u direktorij labosa -> cd ../../../../../../
+5.Odaberi jednu od naedbi koja ti treba ->
+java -cp bin hr.fer.srs.UserMgmt add user             - dodaj novog korisnika
+java -cp bin hr.fer.srs.UserMgmt passwd user          - promjni lozinku postojećeg korisnika 
+java -cp bin hr.fer.srs.UserMgmt forcepass user       - forsiraj promjenu lozinke postojećeg korisnika
+java -cp bin hr.fer.srs.UserMgmt del user             - ukloni korisnika
+java -cp bin hr.fer.srs.Login login user              - ulogiraj korisnika
+
